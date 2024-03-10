@@ -43,12 +43,12 @@ const routes = [
 		path: '/posts/:id', // 동적 라우팅 -> 여러 URL을 하나의 페이지 컴포넌트에 매핑할 때 사용, :id는 파라미터명
 		name: 'PostDetail',
 		component: PostDetailView,
-		// props: true,
-		props: route => {
-			return {
-				id: parseInt(route.params.id),
-			};
-		},
+		props: true,
+		// props: route => {
+		// 	return {
+		// 		id: parseInt(route.params.id),
+		// 	};
+		// },
 		// props: route => ({ id: parseInt(route.params.id) }),
 	},
 	{
